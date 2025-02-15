@@ -1,0 +1,22 @@
+{
+  "name": "hono_example",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/arktype-validator": "latest",
+    "@hono/node-server": "latest",
+    "@paralleldrive/cuid2": "latest",
+    "@scalar/hono-api-reference": "latest",
+    "arktype": "latest",
+    "hono": "latest",
+    "hono-openapi": "latest",
+    "nanoid": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

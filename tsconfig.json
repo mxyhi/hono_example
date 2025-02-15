@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "lib": [
+      "ESNext",
+    ],
+    "moduleDetection": "force",
+    "emitDeclarationOnly": false,
+    "rootDir": "src",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "declarationDir": "types",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
