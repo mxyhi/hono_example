@@ -5,5 +5,7 @@ import { pgTable, varchar } from "drizzle-orm/pg-core";
 export const userEntity = pgTable("user", {
   ...commonKeyEntity,
 
-  id: varchar("id", { length: 128 }).$defaultFn(() => cuid()),
+  id: varchar("id", { length: 128 })
+    .primaryKey()
+    .$defaultFn(() => cuid()),
 });
