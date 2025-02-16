@@ -10,13 +10,18 @@
     "@paralleldrive/cuid2": "latest",
     "@scalar/hono-api-reference": "latest",
     "arktype": "latest",
+    "dotenv": "latest",
+    "drizzle-orm": "latest",
     "hono": "latest",
     "hono-openapi": "latest",
-    "nanoid": "latest"
+    "nanoid": "latest",
+    "pg": "latest"
   },
   "devDependencies": {
-    "cross-env": "latest",
     "@types/node": "latest",
+    "@types/pg": "latest",
+    "cross-env": "latest",
+    "drizzle-kit": "latest",
     "tsx": "latest",
     "typescript": "latest"
   }
