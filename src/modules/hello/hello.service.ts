@@ -18,6 +18,9 @@ export class HelloService {
   async getCurrentUser() {
     console.log("HelloService HelloService1");
     console.log(this.clsService, "==============111============");
+    setTimeout(() => {
+      console.log(requestContext.get().req.header("tenant-id"));
+    }, 5000);
     return this.clsService.getCurrentUser();
   }
 }

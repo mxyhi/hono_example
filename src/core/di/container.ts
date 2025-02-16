@@ -32,6 +32,7 @@ export class Di {
     const c = requestContext.get();
     const key = c.req.header("tenant-id") || this.defaultKey;
     const container = this.getContainer(key);
+
     if (!container) {
       throw new Error(`Container ${key} is not found`);
     }
