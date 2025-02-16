@@ -2,7 +2,7 @@
   "name": "hono_example",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "cross-env NODE_ENV=local tsx watch src/index.ts"
   },
   "dependencies": {
     "@hono/arktype-validator": "latest",
@@ -15,6 +15,7 @@
     "nanoid": "latest"
   },
   "devDependencies": {
+    "cross-env": "latest",
     "@types/node": "latest",
     "tsx": "latest",
     "typescript": "latest"
