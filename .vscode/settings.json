@@ -1,0 +1,41 @@
+{
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "search.exclude": {
+        "**/node_modules": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.codeActionsOnSave": {
+        "editor.action.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "never",
+        "source.sortImports": "always",
+        "source.removeUnusedImports": "always",
+    },
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "workbench.tree.enableStickyScroll": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": true,
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+}

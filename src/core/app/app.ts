@@ -1,10 +1,9 @@
 import { apiReference } from "@scalar/hono-api-reference";
 import { openAPISpecs } from "hono-openapi";
-import { createRouter } from "../router/index.js";
-import { createBaseApp } from "./base.app.js";
 import { contextStorage } from "hono/context-storage";
 import { getRouterName, showRoutes } from "hono/dev";
-import { logger } from "hono/logger";
+import { createRouter } from "../router/index.js";
+import { createBaseApp } from "./base.app.js";
 
 export const createApp = () => {
   const router = createRouter();
