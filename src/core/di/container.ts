@@ -1,4 +1,4 @@
-import { requestContext } from "../async_context/context";
+import { getCtx } from "../async_context";
 
 export type Constructable<T> = new (...args: any[]) => T;
 
@@ -17,8 +17,10 @@ export class Container {
   }
 }
 
+export const DEFAULT_TENANT_ID = "default";
+
 export class Di {
-  private readonly defaultKey = "default";
+  private readonly defaultKey = DEFAULT_TENANT_ID;
   private readonly container = new Map<string | symbol, Container>();
 
   getContainer(key: string | symbol): Container {
@@ -29,8 +31,8 @@ export class Di {
   }
 
   get<T>(instance: Constructable<T>): T {
-    const c = requestContext.get();
-    const key = c.req.header("tenant-id") || this.defaultKey;
+    const c = getCtx();
+    const key = c.var.tenantId || this.defaultKey;
     const container = this.getContainer(key);
 
     if (!container) {

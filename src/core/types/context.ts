@@ -1,7 +1,8 @@
 import type { Di } from "../di/container";
 
-declare module "hono" {
-  interface ContextVariableMap {
+export type BaseEnv = {
+  Variables: {
     di: Di;
-  }
-}
+    tenantId: string;
+  };
+};

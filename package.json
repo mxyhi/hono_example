@@ -14,15 +14,22 @@
     "drizzle-orm": "latest",
     "hono": "latest",
     "hono-openapi": "latest",
+    "luxon": "^3.5.0",
     "nanoid": "latest",
     "pg": "latest"
   },
   "devDependencies": {
+    "@types/luxon": "^3.4.2",
     "@types/node": "latest",
     "@types/pg": "latest",
     "cross-env": "latest",
     "drizzle-kit": "latest",
     "tsx": "latest",
     "typescript": "latest"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
